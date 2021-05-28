@@ -22,3 +22,8 @@ To display all the info of all servers
 
 To display specific infor of server
 ~> ansible all -m gather_facts --limit 172.16.0.10
+
+
+
+To perfome the command by not using sudo in server
+> ansible all -m apt -a update_cache=true --become --ask-become-pass
