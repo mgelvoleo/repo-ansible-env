@@ -27,3 +27,6 @@ To display specific infor of server
 
 To perfome the command by not using sudo in server
 > ansible all -m apt -a update_cache=true --become --ask-become-pass
+
+Install package to each server
+> ansible all -m apt -a name=tmux --become --ask-become-pass
