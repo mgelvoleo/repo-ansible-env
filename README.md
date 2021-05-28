@@ -34,3 +34,9 @@ Install package to each server
 To update the specific packages example snap
 > ansible all -m apt -a "name=snap state=latest" --become --ask-become-pass
 
+
+To update the all packages example snap
+
+    ansible all -m apt -a "upgrade-dist" --become --ask-become-pass
+
+
