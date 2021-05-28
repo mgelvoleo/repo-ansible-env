@@ -36,7 +36,10 @@ To update the specific packages example snap
 
 
 To update the all packages example snap
+> ansible all -m apt -a "upgrade-dist" --become --ask-become-pass
+    
+Shutdown multiple server in one command
+> ansible all -m shell -a "shutdown -h now" --become --ask-become-pass
 
-    ansible all -m apt -a "upgrade-dist" --become --ask-become-pass
 
 
