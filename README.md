@@ -30,3 +30,7 @@ To perfome the command by not using sudo in server
 
 Install package to each server
 > ansible all -m apt -a name=tmux --become --ask-become-pass
+
+To update the specific packages example snap
+> ansible all -m apt -a "name=snap state=latest" --become --ask-become-pass
+
