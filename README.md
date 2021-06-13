@@ -41,3 +41,12 @@ To update the all packages example snap
 Shutdown multiple server in one command
 
     ansible all -m shell -a "shutdown -h now" --become --ask-become-pass
+
+To target the tag
+```
+Shell command
+ansible-playbook --list-tag sitev2.yml
+
+ansible-playbook --tags centos --ask-become-pass sitev2.yml
+
+```
